@@ -39,7 +39,7 @@ $ npm start
  
 ## Screenshots
 
-![Screenshot (23)](https://github.com/shrinivashunnur08/Cooking_Blog/assets/135942833/5c7478a4-9637-4033-b4b0-8e893ad3e9f0)
+![Screenshot (23)](https://github.com/shrinivashunnur08/Cooking_Blog/assets/135942833/579ed71a-1d76-434a-bbdf-76b7a1a496d5)
 
 ![Screenshot (24)](https://github.com/shrinivashunnur08/Cooking_Blog/assets/135942833/a5ad4d3a-e01c-408a-abdc-9b04a3a6ef8f)
 
