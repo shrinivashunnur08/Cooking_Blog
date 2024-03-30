@@ -60,7 +60,7 @@ $ npm start
 
 
 ## 🚀 About Me
-I'm a full stack web developer !!
+I'm a Mern Stack Web Developer !!
 
 
 ## 🔗 Links
