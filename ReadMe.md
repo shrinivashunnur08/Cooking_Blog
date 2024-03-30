@@ -39,6 +39,23 @@ $ npm start
  
 ## Screenshots
 
+![Screenshot (23)](https://github.com/shrinivashunnur08/Cooking_Blog/assets/135942833/5c7478a4-9637-4033-b4b0-8e893ad3e9f0)
+
+![Screenshot (24)](https://github.com/shrinivashunnur08/Cooking_Blog/assets/135942833/a5ad4d3a-e01c-408a-abdc-9b04a3a6ef8f)
+
+![Screenshot (26)](https://github.com/shrinivashunnur08/Cooking_Blog/assets/135942833/172ab4c6-9413-4d36-aa71-c1d02b1340fa)
+
+![Screenshot (27)](https://github.com/shrinivashunnur08/Cooking_Blog/assets/135942833/91e98327-6b20-47ee-a2e4-361b2df1a86e)
+
+![Screenshot (28)](https://github.com/shrinivashunnur08/Cooking_Blog/assets/135942833/b065970f-b4ef-4c00-a949-07f37d47a331)
+
+![Screenshot (29)](https://github.com/shrinivashunnur08/Cooking_Blog/assets/135942833/19161fea-1a9a-4642-932a-518be6ff57e6)
+
+![Screenshot (30)](https://github.com/shrinivashunnur08/Cooking_Blog/assets/135942833/2b4cc620-f875-4f92-914b-e88a1662f56e)
+
+![Screenshot (31)](https://github.com/shrinivashunnur08/Cooking_Blog/assets/135942833/0b8e9551-0d0e-451d-9e64-c3db319198f7)
+
+
 
 
 
