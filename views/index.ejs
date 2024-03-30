@@ -1,0 +1,374 @@
+<div class="row flex-lg-row-reverse align-items-center g-5 py-4 mb-4">
+  <div class="col-12 col-lg-6">
+    <img src="/img/hero-image.png" width="607" height="510" class="d-block mx-lg-auto img-fluid" loading="lazy" alt="Cooking With Node.js">
+  </div>
+
+  <div class="col-12 col-lg-6">
+    <h1 class="display-5 fw-bold mb-3">Flavorful Delights Diary: A Culinary Journey Begins Here!</h1>
+    <p class="lead">
+      
+"Indulge in Shrinivas' Recipe Blog, your ultimate source for culinary delights! From appetizers to desserts, savor handpicked recipes designed to inspire. Whether you're a pro or novice, let Shree's expertise elevate your cooking adventure. Join us and ignite your passion for food!"
+    </p>
+
+    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+      <a href="/explore-latest" class="btn btn-primary btn-dark btn-lg px-4 me-md-2">Explore Latest</a>
+      <!-- <a href="/explore-random" class="btn btn-outline-secondary btn-lg px-4 me-md-2">Show Random</a> -->
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- Categories Start -->
+
+
+<div class="row row-cols-2 row-cols-lg-6 g-2 g-lg-3 py-4">
+
+
+  <% if(categories != '') { %>
+    <% categories.forEach(function(category, index) { %>
+      <a href="/categories/<%- category.name %>" class="col text-center category__link">
+        <div class="category__img shadow">
+          <img src="img/<%- category.image %>" alt="<%- category.name %>" loading="lazy">
+        </div>
+        <div class="pt-1"><%- category.name %></div>
+      </a>
+    <% }) %>
+  <% } %>
+
+  <a href="/categories" class="col text-center category__link">
+    <div class="category__img shadow">
+      <img src="img/view-all.jpg" alt="View All Categories" loading="lazy">
+    </div>
+    <div class="pt-1">Explore All</div>
+  </a>
+
+</div>
+<!-- Categories End -->
+
+
+
+<!-- Latest Start -->
+
+<!-- <section class="pb-4 pt-4">
+  <div class="d-flex mb-2 align-items-center">
+    <h2>Tasty Temptations</h2>
+    <a href="/explore-latest" class="ms-auto">Dive Deeper</a>
+  </div>
+
+  <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+
+    <% if(food != '') { %>
+      <% food.latest.forEach(function(recipe, index){ %>
+      <a href="/recipe/<%= recipe._id %>" class="col text-center category__link">
+        <div class="category__img category__img--large shadow">
+          <img src="/uploads/<%= recipe.image %>" alt="<%= recipe.name %>" loading="lazy">
+        </div>
+        <div class="pt-1"><%= recipe.name %></div>
+      </a>
+      <% }) %>
+    <% } else { %>
+      <p>Oops, No items found.</p>
+    <% } %>
+  </div>
+
+</section> -->
+<!-- Latest End -->
+
+<!-- Thai Start -->
+<section class="pb-4 pt-4">
+  <div class="d-flex mb-2 align-items-center">
+    <h2>TaiTwist Treats</h2>
+    <a href="/categories/Thai" class="ms-auto">
+      Dive Deeper</a>
+  </div>
+
+  <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+    <% if(typeof food.thai !== 'undefined' && food.thai.length > 0) { %>
+      <% food.thai.forEach(function(recipe, index){ %>
+      <a href="/recipe/<%= recipe._id %>" class="col text-center category__link">
+        <div class="category__img category__img--large shadow">
+          <img src="/uploads/<%= recipe.image %>" alt="<%= recipe.name %>" loading="lazy">
+        </div>
+        <div class="pt-1"><%= recipe.name %></div>
+      </a>
+      <% }) %>
+    <% } else { %>
+      <p>Oops, No items found.</p>
+    <% } %>
+  </div>
+</section>
+<!-- Thai End -->
+
+<!-- American Start -->
+<section class="pb-4 pt-4">
+  <div class="d-flex mb-2 align-items-center">
+    <h2>Americana Appetite</h2>
+    <a href="/categories/American" class="ms-auto">Dive Deeper</a>
+  </div>
+
+  <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+    <% if(food.american != '') { %>
+      <% food.american.forEach(function(recipe, index){ %>
+      <a href="/recipe/<%= recipe._id %>" class="col text-center category__link">
+        <div class="category__img category__img--large shadow">
+          <img src="/uploads/<%= recipe.image %>" alt="<%= recipe.name %>" loading="lazy">
+        </div>
+        <div class="pt-1"><%= recipe.name %></div>
+      </a>
+      <% }) %>
+    <% } else { %>
+      <p>Oops, No items found.</p>
+    <% } %>
+  </div>
+</section>
+<!-- American End -->
+
+<!-- Chinese Recipes -->
+<section class="pb-4 pt-4">
+  <div class="d-flex mb-2 align-items-center">
+    <h2>Dragon's Delight Dishes</h2>
+    <a href="/categories/American" class="ms-auto">Dive Deeper</a>
+  </div>
+
+  <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+    <% if(food.chinese != '') { %>
+      <% food.chinese.forEach(function(recipe, index){ %>
+      <a href="/recipe/<%= recipe._id %>" class="col text-center category__link">
+        <div class="category__img category__img--large shadow">
+          <img src="/uploads/<%= recipe.image %>" alt="<%= recipe.name %>" loading="lazy">
+        </div>
+        <div class="pt-1"><%= recipe.name %></div>
+      </a>
+      <% }) %>
+    <% } else { %>
+      <p>Oops, No items found.</p>
+    <% } %>
+  </div>
+</section>
+<!-- American End -->
+
+
+
+<!-- Submit - Start -->
+<section class="px-4 py-5 my-5 text-center">
+  <img src="/img/publish-recipe.png" class="d-block mx-auto mb-4 img-fluid" alt="Publish your recipe for FREE today" width="566" height="208" loading="lazy">
+  <h1 class="display-5 fw-bold">Delight your taste buds with our free recipe featured to Thousands :D </h1>
+  <div class="col-lg-6 mx-auto">
+    <p class="lead mb-4">Publish your Recipe in front of thousands of people for free!</p>
+    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+      <a href="/submit-recipe" class="btn btn-primary btn-dark btn-lg">Submit Recipe</a>
+    </div>
+  </div>
+  </section>
+
+
+
+
+  <!-- Site footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <h6>About Me</h6>
+        <p class="text-justify">Welcome to our Recipe Blog! This platform serves as a culinary hub where users can not only share their own recipes but also explore a diverse array of dishes from all corners of the globe. Whether you're looking to whip up a traditional family recipe or experiment with international flavors, you'll find endless inspiration here. Created by <i>Shrinivas</i> as a Developer for <i>Bharat Intern Company</i>, this site is designed to foster a community of passionate food enthusiasts who share their love for cooking and eating. Join us today to embark on a delicious journey of discovery!</p>
+      </div>
+
+      <div class="col-xs-6 col-md-3">
+        <h6>Languages Used</h6>
+        <ul class="footer-links">
+          <li>EJS(HTML)</li>
+          <li>CSS</li>
+          <li>EXPRESS </li>
+          <li>MONGOOSE(DB)</li>
+        </ul>
+      </div>
+
+      <div class="col-xs-6 col-md-3">
+        <h6>Connect ME :)</h6>
+        <ul class="footer-links">
+          <li><a href="https://www.linkedin.com/in/shrinivas-hunnur-b93347225/">LinkedIn</a></li>
+          <li><a href="https://github.com/shrinivashunnur08">GithHub</a></li>
+          <li><a href="https://twitter.com/Shriiii_07">Twitter</a></li>
+          <li><a href="https://www.facebook.com/shrinivas.hunnur">Facebook</a></li>
+          <li><a href="https://www.instagram.com/_shri_maan_/">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+  </div>
+
+</footer>
+
+<style>
+.site-footer {
+  background-color: #26272b;
+  padding: 45px 0 20px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #737373;
+}
+
+.site-footer hr {
+  border-top-color: #bbb;
+  opacity: 0.5;
+}
+
+.site-footer hr.small {
+  margin: 20px 0;
+}
+
+.site-footer h6 {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  letter-spacing: 2px;
+}
+
+.site-footer a {
+  color: #737373;
+}
+
+.site-footer a:hover {
+  color: #3366cc;
+  text-decoration: none;
+}
+
+.footer-links {
+  padding-left: 0;
+  list-style: none;
+}
+
+.footer-links li {
+  display: block;
+}
+
+.footer-links a {
+  color: #737373;
+}
+
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+  color: #3366cc;
+  text-decoration: none;
+}
+
+.footer-links.inline li {
+  display: inline-block;
+}
+
+.site-footer .social-icons {
+  text-align: right;
+}
+
+.site-footer .social-icons a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 6px;
+  margin-right: 0;
+  border-radius: 100%;
+  background-color: #33353d;
+}
+
+.copyright-text {
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  .site-footer [class^="col-"] {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .site-footer {
+    padding-bottom: 0;
+  }
+  .site-footer .copyright-text,
+  .site-footer .social-icons {
+    text-align: center;
+  }
+}
+
+.social-icons {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.social-icons li.title {
+  margin-right: 15px;
+  text-transform: uppercase;
+  color: #96a2b2;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.social-icons a {
+  background-color: #eceeef;
+  color: #818a91;
+  font-size: 16px;
+  display: inline-block;
+  line-height: 44px;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  margin-right: 8px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+  color: #fff;
+  background-color: #29aafe;
+}
+
+.social-icons.size-sm a {
+  line-height: 34px;
+  height: 34px;
+  width: 34px;
+  font-size: 14px;
+}
+
+.social-icons a.facebook:hover {
+  background-color: #3b5998;
+}
+
+.social-icons a.twitter:hover {
+  background-color: #00aced;
+}
+
+.social-icons a.linkedin:hover {
+  background-color: #007bb6;
+}
+
+.social-icons a.dribbble:hover {
+  background-color: #ea4c89;
+}
+
+@media (max-width: 767px) {
+  .social-icons li.title {
+    display: block;
+    margin-right: 0;
+    font-weight: 600;
+  }
+}
+</style>
+
+
+</section>
+ 
+<!-- Submit - End -->
