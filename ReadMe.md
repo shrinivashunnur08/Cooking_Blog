@@ -1,5 +1,5 @@
 
-## My Recipe Blog - Using ExpressJS & MongoDb
+## My Recipe Blog - Using Ejs, ExpressJS & MongoDb
 
 
 Discover and share culinary delights on our Recipe Blog! Join our community to explore a world of delicious recipes from around the globe. Whether you're a cooking enthusiast or looking for culinary inspiration, our platform has something for everyone. Share your favorite recipes and indulge in a flavorful journey with us today!
